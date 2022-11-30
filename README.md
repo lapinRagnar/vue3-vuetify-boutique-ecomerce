@@ -1,3 +1,6 @@
+# demo - visiter l'application
+https://vue3-vuetify3-e-boutique.web.app
+
 # default
 
 ## Project setup
