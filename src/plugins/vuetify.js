@@ -8,6 +8,11 @@
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 
+// fontawsome
+import { aliases, fa } from 'vuetify/iconsets/fa'
+import { mdi } from 'vuetify/iconsets/mdi'
+import '@fortawesome/fontawesome-free/css/all.css'
+
 // Composables
 import { createVuetify } from 'vuetify'
 
@@ -22,5 +27,13 @@ export default createVuetify({
         },
       },
     },
+  },
+  icons: {
+    defaultSet: 'fa' || 'mdi',
+    aliases,
+    sets: {
+      fa,
+      mdi,
+    }
   },
 })
