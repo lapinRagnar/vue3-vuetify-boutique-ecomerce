@@ -75,6 +75,27 @@
 
         <Product />
 
+        <v-card color="#E2F2E5" class="my-8">
+          <v-toolbar>
+            <v-toolbar-title class="text-h4">Popular Bundle Pack</v-toolbar-title>
+          </v-toolbar>
+        </v-card>
+
+        <Pack />
+
+        <v-card color="#FAFAFA" class="mt-8 px-16 py-5">
+
+          <!-- style="position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0; text-align: center;" -->
+          <div
+            class="mt-n5"
+            style="position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0; text-align: center;"
+          >
+            <h2 class="">What our clients say</h2>
+          </div>
+        </v-card>
+
+        <Client />
+
       </v-col>
 
     </v-row>
@@ -86,6 +107,8 @@
   import { ref } from 'vue'
   import Category from '@/components/Category.vue'
   import Product from '@/components/Product.vue'
+  import Pack from '@/components/Pack.vue'
+  import Client from '@/components/Client.vue'
 
   const toggle = ref(1)
 
