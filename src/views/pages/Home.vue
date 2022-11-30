@@ -60,6 +60,9 @@
 
           </v-btn-toggle>
         </v-toolbar>
+
+        <Category />
+
       </v-col>
 
     </v-row>
@@ -68,10 +71,11 @@
 
 <script setup>
 
-  import { ref } from 'vue';
+  import { ref } from 'vue'
+  import Category from '@/components/Category.vue'
 
   const toggle = ref(1)
-  
+
 </script>
 
 <style lang="scss">
