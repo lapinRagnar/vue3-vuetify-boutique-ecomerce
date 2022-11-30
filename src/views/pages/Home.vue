@@ -4,7 +4,7 @@
     <v-row>
 
       <v-col cols="12">
-        <v-card class="mx-auto rounded-xl" flat>
+        <v-card class="mx-auto rounded-be-pill" flat>
           <v-img src="cover2.png" max-height="100%" max-width="100%">
 
             <v-card-title class="top ml-10 mb-5">
@@ -63,6 +63,18 @@
 
         <Category />
 
+        <v-toolbar class="my-10">
+          <v-toolbar-title class="text-h6"> Popular Product </v-toolbar-title>
+          <v-spacer></v-spacer>
+          <v-btn
+            rounded
+            color="green"
+            class="px-8"
+          >See All</v-btn>
+        </v-toolbar>
+
+        <Product />
+
       </v-col>
 
     </v-row>
@@ -73,6 +85,7 @@
 
   import { ref } from 'vue'
   import Category from '@/components/Category.vue'
+  import Product from '@/components/Product.vue'
 
   const toggle = ref(1)
 
