@@ -1,15 +1,18 @@
 <template>
-  <v-app>
-    <div>{{ authStore.maVariablePinia }}</div>
-    <v-icon icon="fas fa-plus"/>
-    <v-icon icon="mdi:mdi-arrow-bottom-left"/>
-    <v-icon icon="mdi:mdi-minus" />
+  <v-app id="inspire">
 
-    <nav>
-      <RouterLink class="mr-15" to="/" >home</RouterLink>
-      <RouterLink to="/about" >About</RouterLink>
-    </nav>
+    <Navbar />
     <v-main>
+
+      <div>{{ authStore.maVariablePinia }}</div>
+      <v-icon icon="fas fa-plus"/>
+      <v-icon icon="mdi:mdi-arrow-bottom-left"/>
+      <v-icon icon="mdi:mdi-minus" />
+
+      <nav>
+        <RouterLink class="mr-15" to="/" >home</RouterLink>
+        <RouterLink to="/about" >About</RouterLink>
+      </nav>
       <RouterView></RouterView>
     </v-main>
   </v-app>
@@ -17,6 +20,7 @@
 
 <script setup>
 
+import Navbar from './components/Navbar.vue'
 import { RouterView } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 
