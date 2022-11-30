@@ -96,9 +96,50 @@
 
         <Client />
 
+        <v-toolbar class="mt-8">
+          <v-toolbar-title class="text-h6">Our trusted partner</v-toolbar-title>
+        </v-toolbar>
+
+        <Partner class="mb-3" />
+
+        <v-card
+          flat
+          color="#E2F2E5"
+          class="mx-10 pa-4"
+          height="550"
+        >
+          <v-row cl>
+            <v-col cols="12" sm="12" md="5">
+              <v-card class="ml-16 mt-10 bordure-portable" height="450" width="200">
+                <v-img src="mobile.png"></v-img>
+              </v-card>
+            </v-col>
+
+            <v-col cols="12" sm="6" md="7">
+
+              <h1 class="mt-16"> Download App</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quisquam quia officia a rerum consequuntur tempora, minima exercitationem ipsam maiores dicta aut magnam delectus iusto eveniet sapiente reiciendis autem est!</p>
+
+              <v-btn color="black" class="my-5">
+                <v-icon class="mr-2" color="white">fab fa-apple</v-icon>
+                <div>App Store</div>
+              </v-btn>
+
+              <v-btn color="black" class="ml-5">
+                <v-icon class="mr-2" color="white" >fab fa-google-play</v-icon>
+                <div>Play Store</div>
+              </v-btn>
+
+            </v-col>
+          </v-row>
+
+        </v-card>
+
       </v-col>
 
     </v-row>
+
+    <Footer />
   </v-container>
 </template>
 
@@ -109,12 +150,26 @@
   import Product from '@/components/Product.vue'
   import Pack from '@/components/Pack.vue'
   import Client from '@/components/Client.vue'
+  import Partner from '@/components/Partner.vue'
+  import Footer from '@/components/Footer.vue'
 
   const toggle = ref(1)
+
+  const icons = ref([
+    "fab fa-apple",
+    "fab fa-google-plus-g",
+    "fab fa-twitter",
+    "fab fa-facebook-f",
+  ])
 
 </script>
 
 <style lang="scss">
+
+  .bordure-portable {
+    border: 10px solid black;
+    border-radius: 10px;
+  }
 
   .marginLeft {
     margin-left: -90px;
